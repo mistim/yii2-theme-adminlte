@@ -1,0 +1,27 @@
+{
+    "name": "mistim/yii2-theme-adminlte",
+    "description": "Theme AdminLTE for Yii2 Framework",
+    "keywords": [
+        "yii2",
+        "thwmw",
+        "adminlte"
+    ],
+    "homepage": "https://github.com/mistim/yii2-theme-adminlte",
+    "type": "yii2-extension",
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Mistim",
+            "email": "m.mistim@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "omgdef\\multilingual\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    }
+}
