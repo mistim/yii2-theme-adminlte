@@ -3,9 +3,12 @@ yii2-theme-admin
 
 This package contains an:
 
-- [AssetBundle for Yii Framework 2.0](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html) 
-which registers the resources of AdminLTE 2 and Font-Awesome 4
-- [Widgets](http://www.yiiframework.com/doc-2.0/guide-structure-widgets.html) which use GUI AdminLTE 2
+- [AssetBundle](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html) for Yii Framework 2.0
+which registers the resources of [AdminLTE 2](https://github.com/almasaeed2010/AdminLTE/) 
+and [Font-Awesome 4](https://github.com/FortAwesome/Font-Awesome)
+- [Widgets](http://www.yiiframework.com/doc-2.0/guide-structure-widgets.html) 
+which use [GUI AdminLTE 2](https://almsaeedstudio.com/preview)
+- example [views](http://www.yiiframework.com/doc-2.0/guide-structure-views.html)
 
 Installation
 ------------
