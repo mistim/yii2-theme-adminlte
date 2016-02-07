@@ -19,7 +19,8 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
-        "almasaeed2010/adminlte": "~2.0"
+        "almasaeed2010/adminlte": "~2.0",
+        "FortAwesome/Font-Awesome": "*"
     },
     "autoload": {
         "psr-4": {
