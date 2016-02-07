@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mistim\\theme\\adminlte\\": ""
+            "mistim\\theme\\adminlte\\": "src"
         }
     }
 }
