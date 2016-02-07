@@ -1,6 +1,6 @@
 <?php
 
-namespace mistim\themes\adminlte\widgets;
+namespace mistim\theme\adminlte\widgets;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
@@ -8,7 +8,7 @@ use yii\helpers\Html;
 
 /**
  * Class Menu
- * @package mistim\themes\adminlte\widgets
+ * @package mistim\theme\adminlte\widgets
  */
 class Menu extends \yii\widgets\Menu
 {

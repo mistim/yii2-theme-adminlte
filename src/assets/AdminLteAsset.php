@@ -21,7 +21,7 @@ class AdminLteAsset extends AssetBundle
      * @inheritdoc
      */
     public $css = [
-        'css/alms/AdminLTE.min.css'
+        'css/AdminLTE.min.css'
     ];
 
     public $js = [

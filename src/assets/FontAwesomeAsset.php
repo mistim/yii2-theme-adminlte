@@ -19,7 +19,7 @@ class FontAwesomeAsset extends AssetBundle
      * @inheritdoc
      */
     public $css = [
-        'css/alms/font-awesome.min.css',
+        'css/font-awesome.min.css',
     ];
 
     public $js = [];

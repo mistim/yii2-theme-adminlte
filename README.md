@@ -37,6 +37,10 @@ Add the following code to the [application configuration](www.yiiframework.com/d
              ],
         ],
     ],
+    
+Set layout in you main controller:
+
+    public $layout = '@vendor/mistim/yii2-theme-adminlte/src/views/layouts/main';
 
 // TODO
 ...

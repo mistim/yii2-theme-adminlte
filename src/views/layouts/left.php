@@ -1,6 +1,6 @@
 <?php
 
-use mistim\themes\adminlte\widgets\Menu;
+use mistim\theme\adminlte\widgets\Menu;
 
 /** @var $publishedUrl string */
 
