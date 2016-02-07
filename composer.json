@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "omgdef\\multilingual\\": "src"
+            "mistim\\theme\\adminlte\\": ""
         }
     }
 }
