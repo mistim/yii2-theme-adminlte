@@ -21,11 +21,12 @@ class AdminLteAsset extends AssetBundle
      * @inheritdoc
      */
     public $css = [
-        'css/AdminLTE.min.css'
+        'css/AdminLTE.min.css',
     ];
 
     public $js = [
-        'js/app.min.js'
+        'js/app.min.js',
+        'js/demo.js',
     ];
 
     /**
@@ -43,7 +44,7 @@ class AdminLteAsset extends AssetBundle
      * @var string|bool Choose skin color, eg. `'skin-blue'` or set `false` to disable skin loading
      * @see https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#layout
      */
-    public $skin = 'skin-blue';
+    public $skin = '_all-skins';
 
     /**
      * @var array
@@ -70,10 +71,9 @@ class AdminLteAsset extends AssetBundle
     {
         // Append skin color file if specified
         if ($this->skin) {
-            if (!in_array($this->skin, self::$listSkins)) {
+            if (('_all-skins' !== $this->skin) && (strpos($this->skin, 'skin-') !== 0)) {
                 throw new Exception('Invalid skin specified');
             }
-
             $this->css[] = sprintf('css/skins/%s.min.css', $this->skin);
         }
 

@@ -6,8 +6,10 @@ use mistim\theme\adminlte\widgets\Menu;
 
 ?>
 
+<!-- Left side column. contains the logo and sidebar -->
 <aside class="main-sidebar">
 
+    <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 
         <!-- Sidebar user panel -->
@@ -34,34 +36,49 @@ use mistim\theme\adminlte\widgets\Menu;
         </form>
         <!-- /.search form -->
 
+        <!-- sidebar menu: : style can be found in sidebar.less -->
         <?= Menu::widget(
             [
                 'options' => ['class' => 'sidebar-menu'],
+                'encodeLabels' => false,
+                'activateParents' => true,
                 'items' => [
-                    ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                    ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
-                    ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => '<span>' . 'Menu Yii2' . '</span>', 'options' => ['class' => 'header']],
+                    ['label' => '<span>' . 'Gii' . '</span>', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
+                    ['label' => '<span>' . 'Debug' . '</span>', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
+                    ['label' => '<span>' . 'Login' . '</span>', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                     [
-                        'label' => 'Same tools',
+                        'label' => '<span>' . 'Same tools' . '</span>',
                         'icon' => 'fa fa-share',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii'],],
-                            ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug'],],
                             [
-                                'label' => 'Level One',
+                                'label' => '<span>' . 'Gii' . '</span>',
+                                'icon' => 'fa fa-file-code-o',
+                                'url' => ['/gii'],
+                            ],
+                            [
+                                'label' => '<span>' . 'Debug' . '</span>',
+                                'icon' => 'fa fa-dashboard',
+                                'url' => ['/debug'],
+                            ],
+                            [
+                                'label' => '<span>' . 'Level One' . '</span>',
                                 'icon' => 'fa fa-circle-o',
                                 'url' => '#',
                                 'items' => [
-                                    ['label' => 'Level Two', 'icon' => 'fa fa-circle-o', 'url' => '#',],
                                     [
-                                        'label' => 'Level Two',
+                                        'label' => '<span>' . 'Level Two' . '</span>',
+                                        'icon' => 'fa fa-circle-o',
+                                        'url' => '#',
+                                    ],
+                                    [
+                                        'label' => '<span>' . 'Level Two' . '</span>',
                                         'icon' => 'fa fa-circle-o',
                                         'url' => '#',
                                         'items' => [
-                                            ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
-                                            ['label' => 'Level Three', 'icon' => 'fa fa-circle-o', 'url' => '#',],
+                                            ['label' => '<span>' . 'Level Three' . '</span>', 'icon' => 'fa fa-circle-o', 'url' => '#',],
+                                            ['label' => '<span>' . 'Level Three' . '</span>', 'icon' => 'fa fa-circle-o', 'url' => '#',],
                                         ],
                                     ],
                                 ],
@@ -73,5 +90,5 @@ use mistim\theme\adminlte\widgets\Menu;
         ) ?>
 
     </section>
-
+    <!-- /.sidebar -->
 </aside>

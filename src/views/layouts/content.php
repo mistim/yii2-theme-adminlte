@@ -6,7 +6,9 @@ use mistim\theme\adminlte\widgets\Alert;
 /** @var $content string */
 
 ?>
+<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
     <section class="content-header">
         <?php if (isset($this->blocks['content-header'])): ?>
             <h1><?= $this->blocks['content-header'] ?></h1>
@@ -31,6 +33,7 @@ use mistim\theme\adminlte\widgets\Alert;
         ]) ?>
     </section>
 
+    <!-- Main content -->
     <section class="content">
         <?= Alert::widget() ?>
         <?= $content ?>

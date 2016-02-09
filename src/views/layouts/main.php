@@ -33,22 +33,23 @@ if (Yii::$app->controller->action->id === 'login') {
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
     <?php $this->beginBody() ?>
-    <div class="wrapper">
 
-        <?= $this->render('header', [
-            'publishedUrl' => $publishedUrl
-        ]) ?>
+        <div class="wrapper">
 
-        <?= $this->render('left', [
-            'publishedUrl' => $publishedUrl
-        ]) ?>
+            <?= $this->render('header', [
+                'publishedUrl' => $publishedUrl
+            ]) ?>
 
-        <?= $this->render('content', [
-            'content'      => $content,
-            'publishedUrl' => $publishedUrl,
-        ]) ?>
+            <?= $this->render('left', [
+                'publishedUrl' => $publishedUrl
+            ]) ?>
 
-    </div>
+            <?= $this->render('content', [
+                'content'      => $content,
+                'publishedUrl' => $publishedUrl,
+            ]) ?>
+
+        </div>
 
     <?php $this->endBody() ?>
     </body>
