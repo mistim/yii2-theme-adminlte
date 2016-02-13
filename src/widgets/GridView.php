@@ -7,7 +7,6 @@ use app\themes\adminlte\DataTablesAsset;
 /**
  * Class GridView
  * @package app\themes\adminlte\widgets
- * Theme GridView widget.
  */
 class GridView extends \yii\grid\GridView
 {

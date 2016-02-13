@@ -10,7 +10,6 @@ use Yii;
 /**
  * Class Box
  * @package app\themes\adminlte\widgets
- * Theme Box widget.
  */
 class Box extends Widget
 {
@@ -30,7 +29,8 @@ class Box extends Widget
     public $buttons = [];
 
     /**
-     * @var string|null Widget buttons template
+     * Widget buttons template
+     * @var string|null
      * Example: '{create} {delete}'
      */
     public $buttonsTemplate;
@@ -88,10 +88,12 @@ class Box extends Widget
         if ($this->title !== null || !empty($this->buttons)) {
             // Begin box header
             echo Html::beginTag('div', ['class' => 'box-header']);
+
             // Box title
             if ($this->title !== null) {
                 echo Html::tag('h3', $this->title, ['class' => 'box-title']);
             }
+
             // Render buttons
             $this->renderButtons();
             // End box header
@@ -114,6 +116,7 @@ class Box extends Widget
         if ($this->renderBody === true) {
             echo "\n" . Html::endTag('div'); // End box body
         }
+
         echo "\n" . Html::endTag('div'); // End box
     }
 
@@ -227,6 +230,7 @@ class Box extends Widget
                 '/\\{([\w\-\/]+)\\}/',
                 function ($matches) {
                     $name = $matches[1];
+
                     if (isset($this->buttons[$name])) {
                         $label = isset($this->buttons[$name]['label']) ? $this->buttons[$name]['label'] : '';
                         $url = isset($this->buttons[$name]['url']) ? $this->buttons[$name]['url'] : '#';
