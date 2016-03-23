@@ -41,6 +41,18 @@ Add the following code to the [application configuration](www.yiiframework.com/d
 Set layout in your main controller:
 
     public $layout = '@vendor/mistim/yii2-theme-adminlte/src/views/layouts/main';
+    
+Use template for GII
+
+    'gii' => [
+        'class' => 'yii\gii\Module',
+        'generators' => [
+            'crud' => [
+                'class'     => 'yii\gii\generators\crud\Generator',
+                'templates' => ['adminlte' => '@app/theme/adminlte/generators/crud/default']
+            ]
+        ]
+    ],
 
 // TODO
 ...
