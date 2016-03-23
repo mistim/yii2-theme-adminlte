@@ -42,14 +42,16 @@ Set layout in your main controller:
 
     public $layout = '@vendor/mistim/yii2-theme-adminlte/src/views/layouts/main';
     
-Use template for GII
+Use template for [Gii](http://www.yiiframework.com/doc-2.0/guide-start-gii.html)
 
     'gii' => [
         'class' => 'yii\gii\Module',
         'generators' => [
             'crud' => [
                 'class'     => 'yii\gii\generators\crud\Generator',
-                'templates' => ['adminlte' => '@app/theme/adminlte/generators/crud/default']
+                'templates' => [
+                    'adminlte' => '@app/theme/adminlte/generators/crud/default'
+                ]
             ]
         ]
     ],
