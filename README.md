@@ -17,11 +17,11 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Run:
 
-    php composer.phar require mistim/yii2-adminlte-asset "dev-master"
+    php composer.phar require mistim/yii2-adminlte-asset "*"
     
 or add require to **composer.json**:
 
-    "mistim/yii2-adminlte-asset": "dev-master"
+    "mistim/yii2-adminlte-asset": "*"
     
 Configuration
 -------------
@@ -32,7 +32,7 @@ Add the following code to the [application configuration](www.yiiframework.com/d
         'view' => [
              'theme' => [
                  'pathMap' => [
-                    '@app/views' => '@vendor/mistim/yii2-adminlte-asset/views'
+                    '@app/views' => '@vendor/mistim/yii2-theme-adminlte/src/views'
                  ],
              ],
         ],
@@ -50,7 +50,7 @@ Use template for [Gii](http://www.yiiframework.com/doc-2.0/guide-start-gii.html)
             'crud' => [
                 'class'     => 'yii\gii\generators\crud\Generator',
                 'templates' => [
-                    'adminlte' => '@app/theme/adminlte/generators/crud/default'
+                    'adminlte' => '@vendor/mistim/yii2-theme-adminlte/src/generators/crud/default'
                 ]
             ]
         ]

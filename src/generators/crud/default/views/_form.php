@@ -39,7 +39,7 @@ use yii\bootstrap\ActiveForm;
     }
 } ?>
 
-    <div class="col-sm-6 col-sm-offset-2">
+    <div class="col-sm-6 col-sm-offset-3">
         <?= "<?= " ?>Html::submitButton($model->isNewRecord ? <?= $generator->generateString('Create') ?> : <?= $generator->generateString('Update') ?>, [
             'class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'
         ]) ?>

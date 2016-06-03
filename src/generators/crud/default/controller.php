@@ -93,6 +93,8 @@ class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->bas
 
         if ($model->load(Yii::$app->request->post()) && $model->save())
         {
+            Yii::$app->getSession()->setFlash('success', Yii::t('app', 'Entry has been saved successfully!'));
+
             return $this->redirect(['view', <?= $urlParams ?>]);
         }
         else
@@ -115,6 +117,8 @@ class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->bas
 
         if ($model->load(Yii::$app->request->post()) && $model->save())
         {
+            Yii::$app->getSession()->setFlash('success', Yii::t('app', 'Entry has been saved successfully!'));
+
             return $this->redirect(['view', <?= $urlParams ?>]);
         }
         else
@@ -133,6 +137,8 @@ class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->bas
      */
     public function actionDelete(<?= $actionParams ?>)
     {
+        Yii::$app->getSession()->setFlash('success', Yii::t('app', 'Entry has been deleted successfully!'));
+
         $this->findModel(<?= $actionParams ?>)->delete();
 
         return $this->redirect(['index']);

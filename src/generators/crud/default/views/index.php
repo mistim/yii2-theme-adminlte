@@ -59,17 +59,17 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 $showActions = true;
 $actions = [];
 
-if (Yii::$app->user->can('/admin/page/view')) {
+if (Yii::$app->user->can('/<?= $gridClass ?>/view')) {
     $actions[] = '{view}';
     $showActions = $showActions || true;
 }
 
-if (Yii::$app->user->can('/admin/page/update')) {
+if (Yii::$app->user->can('/<?= $gridClass ?>/update')) {
     $actions[] = '{update}';
     $showActions = $showActions || true;
 }
 
-if (Yii::$app->user->can('/admin/page/delete')) {
+if (Yii::$app->user->can('/<?= $gridClass ?>/delete')) {
     $actions[] = '{delete}';
     $showActions = $showActions || true;
 }
