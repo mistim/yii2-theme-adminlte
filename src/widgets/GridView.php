@@ -1,12 +1,12 @@
 <?php
 
-namespace app\themes\adminlte\widgets;
+namespace mistim\theme\adminlte\widgets;
 
-use app\themes\adminlte\DataTablesAsset;
+use mistim\theme\adminlte\DataTablesAsset;
 
 /**
  * Class GridView
- * @package app\themes\adminlte\widgets
+ * @package mistim\theme\adminlte\widgets
  */
 class GridView extends \yii\grid\GridView
 {

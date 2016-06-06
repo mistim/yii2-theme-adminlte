@@ -1,6 +1,6 @@
 <?php
 
-namespace app\themes\adminlte\widgets;
+namespace mistim\theme\adminlte\widgets;
 
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -9,7 +9,7 @@ use Yii;
 
 /**
  * Class Box
- * @package app\themes\adminlte\widgets
+ * @package mistim\theme\adminlte\widgets
  */
 class Box extends Widget
 {

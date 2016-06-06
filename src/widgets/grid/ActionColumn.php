@@ -1,6 +1,6 @@
 <?php
 
-namespace app\themes\adminlte\widgets\grid;
+namespace mistim\theme\adminlte\widgets\grid;
 
 use Yii;
 use yii\helpers\Html;

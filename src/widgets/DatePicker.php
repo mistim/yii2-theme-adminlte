@@ -1,6 +1,6 @@
 <?php
 
-namespace app\themes\adminlte\widgets;
+namespace mistim\theme\adminlte\widgets;
 
 use mistim\theme\adminlte\assets\DatePickerAsset;
 use yii\helpers\Html;
@@ -9,7 +9,7 @@ use yii\widgets\InputWidget;
 
 /**
  * Class DatePicker
- * @package app\themes\adminlte\widgets
+ * @package mistim\theme\adminlte\widgets
  */
 class DatePicker extends InputWidget
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\themes\adminlte\widgets;
+namespace mistim\theme\adminlte\widgets;
 
 /**
  * Class DatePickerTrait

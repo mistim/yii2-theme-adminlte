@@ -1,13 +1,13 @@
 <?php
 
-namespace app\themes\adminlte\widgets\form;
+namespace mistim\theme\adminlte\widgets\form;
 
-use app\themes\adminlte\widgets\DatePicker as DatePickerBase;
+use mistim\theme\adminlte\widgets\DatePicker as DatePickerBase;
 use yii\helpers\Html;
 
 /**
  * Class DatePicker
- * @package app\themes\adminlte\widgets\form
+ * @package mistim\theme\adminlte\widgets\form
  */
 class DatePicker extends DatePickerBase
 {

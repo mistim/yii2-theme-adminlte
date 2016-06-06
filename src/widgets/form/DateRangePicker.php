@@ -1,6 +1,6 @@
 <?php
 
-namespace app\themes\adminlte\widgets\form;
+namespace mistim\theme\adminlte\widgets\form;
 
 use kartik\daterange\DateRangePicker as BaseDateRangePicker;
 use yii\helpers\ArrayHelper;
