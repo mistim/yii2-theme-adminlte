@@ -13,7 +13,7 @@ echo "<?php\n";
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use app\theme\adminlte\widgets\Box;
+use mistim\theme\adminlte\widgets\Box;
 
 /* @var $this yii\web\View */
 /* @var $model <?= ltrim($generator->modelClass, '\\') ?> */

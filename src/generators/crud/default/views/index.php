@@ -15,8 +15,8 @@ echo "<?php\n";
 ?>
 
 use yii\helpers\Html;
-use app\theme\adminlte\widgets\Box;
-use app\theme\adminlte\widgets\grid\ActionColumn;
+use mistim\theme\adminlte\widgets\Box;
+use mistim\theme\adminlte\widgets\grid\ActionColumn;
 use <?= $generator->indexWidgetType === 'grid' ? "yii\\grid\\GridView" : "yii\\widgets\\ListView" ?>;
 
 /* @var $this yii\web\View */
