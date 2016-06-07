@@ -44,7 +44,7 @@ class Alert extends Widget
             /* assign unique id to each alert box */
             $this->options['id'] = $this->getId() . '-' . $type;
 
-            echo \mistim\themes\adminlte\widgets\covers\Alert::widget([
+            echo \mistim\theme\adminlte\widgets\covers\Alert::widget([
                     'type'        => $type,
                     'body'        => $message,
                     'closeButton' => $this->closeButton,

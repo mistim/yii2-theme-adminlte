@@ -35,6 +35,11 @@ use Yii;
  */
 class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . "\n" ?>
 {
+    const CACHE_KAY = 'modelLanguage_';
+    const CACHE_DURATION = 0; // 0 means never expire.
+    const STATUS_INACTIVE = 0;
+    const STATUS_ACTIVE = 1;
+
     /**
      * @inheritdoc
      */
@@ -96,4 +101,30 @@ class <?= $className ?> extends <?= '\\' . ltrim($generator->baseClass, '\\') . 
         return new <?= $queryClassFullName ?>(get_called_class());
     }
 <?php endif; ?>
+
+    /**
+    * @param bool $insert
+    * @param array $changedAttributes
+    * @throws \Exception
+    */
+    public function afterSave($insert, $changedAttributes)
+    {
+        parent::afterSave($insert, $changedAttributes);
+
+        $this->clearCache('all');
+    }
+
+    /**
+    * @param string|integer $subKey
+    * @return bool
+    *
+    * delete all: $subKey = "all"
+    * delete default: $subKey = "default"
+    * delete one: $subKey = $model->getPrimaryKey
+    */
+    public static function clearCache($subKey)
+    {
+        $keyCache = self::CACHE_KAY . $subKey;
+        return Yii::$app->cache->delete($keyCache);
+    }
 }

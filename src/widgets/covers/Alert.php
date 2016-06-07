@@ -1,6 +1,6 @@
 <?php
 
-namespace mistim\themes\adminlte\widgets\covers;
+namespace mistim\theme\adminlte\widgets\covers;
 
 use Yii;
 use yii\helpers\Html;
