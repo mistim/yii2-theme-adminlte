@@ -174,7 +174,7 @@ class Box extends Widget
                 'icon' => 'fa-plus',
                 'options' => [
                     'class' => 'btn-default',
-                    'title' => Yii::t('app/themes/adminlte/widgets/box', 'Create')
+                    'title' => Yii::t('admin', 'Create')
                 ]
             ];
         }
@@ -185,8 +185,8 @@ class Box extends Widget
                 'icon' => 'fa-trash-o',
                 'options' => [
                     'class' => 'btn-default',
-                    'title' => Yii::t('app/themes/adminlte/widgets/box', 'Delete'),
-                    'data-confirm' => Yii::t('app/themes/adminlte/widgets/box', 'Are you sure you want to delete this item?'),
+                    'title' => Yii::t('admin', 'Delete'),
+                    'data-confirm' => Yii::t('admin', 'Are you sure you want to delete this item?'),
                     'data-method' => 'delete'
                 ]
             ];
@@ -199,7 +199,7 @@ class Box extends Widget
                 'options' => [
                     'id' => 'batch-delete',
                     'class' => 'btn-default',
-                    'title' => Yii::t('app/themes/adminlte/widgets/box', 'Delete selected')
+                    'title' => Yii::t('admin', 'Delete selected')
                 ]
             ];
         }
@@ -210,7 +210,7 @@ class Box extends Widget
                 'icon' => 'fa-reply',
                 'options' => [
                     'class' => 'btn-default',
-                    'title' => Yii::t('app/themes/adminlte/widgets/box', 'Cancel')
+                    'title' => Yii::t('admin', 'Cancel')
                 ]
             ];
         }
@@ -271,9 +271,9 @@ class Box extends Widget
                     "evt.preventDefault();" .
                     "var keys = jQuery('#" . $this->grid . "').yiiGridView('getSelectedRows');" .
                     "if (keys == '') {" .
-                        "alert('" . Yii::t('app/themes/adminlte/widgets/box', 'You need to select at least one item.') . "');" .
+                        "alert('" . Yii::t('admin', 'You need to select at least one item.') . "');" .
                     "} else {" .
-                        "if (confirm('" . Yii::t('app/themes/adminlte/widgets/box', 'Are you sure you want to delete selected items?') . "')) {" .
+                        "if (confirm('" . Yii::t('admin', 'Are you sure you want to delete selected items?') . "')) {" .
                             "jQuery.ajax({" .
                                 "type: 'POST'," .
                                 "url: jQuery(this).attr('href')," .
